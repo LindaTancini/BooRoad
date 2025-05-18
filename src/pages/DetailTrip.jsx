@@ -8,31 +8,31 @@ function TripDetails() {
 
   return (
     <div className="container my-5">
-      {ArrayTrip.map((viaggio) =>
-        viaggio.id.toString() === id ? (
-          <div key={viaggio.id} className="card shadow">
+      {ArrayTrip.map((trip) =>
+        trip.id.toString() === id ? (
+          <div key={trip.id} className="card shadow">
             <div className="row g-0">
               <div className="col-md-6">
                 <img
-                  src={`/public/${viaggio.image}`}
-                  alt={viaggio.destination}
+                  src={`/public/${trip.image}`}
+                  alt={trip.destination}
                   className="img-fluid rounded-start h-100 object-fit-cover"
                 />
               </div>
               <div className="col-md-6">
                 <div className="card-body">
-                  <h2 className="card-title">{viaggio.destination}</h2>
+                  <h2 className="card-title">{trip.destination}</h2>
                   <p className="card-text">
-                    <strong>Operatore:</strong> {viaggio.operator}
+                    <strong>Operatore:</strong> {trip.operator}
                   </p>
                   <p className="card-text">
-                    <strong>Stato:</strong> {viaggio.status}
+                    <strong>Stato:</strong> {trip.status}
                   </p>
                   <p className="card-text">
-                    <strong>Partenza:</strong> {viaggio.start_date}
+                    <strong>Partenza:</strong> {trip.start_date}
                   </p>
                   <p className="card-text">
-                    <strong>Ritorno:</strong> {viaggio.end_date}
+                    <strong>Ritorno:</strong> {trip.end_date}
                   </p>
                 </div>
               </div>

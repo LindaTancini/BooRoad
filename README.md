@@ -20,8 +20,8 @@ Questa applicazione React mostra un prototipo dell'app Booroad con una lista di 
 
 Questo progetto è stato realizzato da:
 
-- Linda (https://github.com/LindaTancini)
-- Andrea (https://github.com/AndreaRispoli97)
-- Esteban (https://github.com/EstebanCaponio)
-- Vincenzo
-- Gianfranco
+- Linda Tancini (https://github.com/LindaTancini)
+- Andrea Rispoli (https://github.com/AndreaRispoli97)
+- Esteban Caponio (https://github.com/EstebanCaponio)
+- Vincenzo Tulimieri
+- Gianfranco Mendoza
