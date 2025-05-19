@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import TripContext from "../context/TripContext";
 import CardTrip from "../components/CardTrip";
 
@@ -7,9 +7,11 @@ function TripDetails() {
   const { id } = useParams();
   const { ArrayTrip } = useContext(TripContext);
 
+  const [tripList, setTripList] = useState(ArrayTrip);
+
   return (
     <div className="container my-5">
-      {ArrayTrip.map((trip) =>
+      {tripList.map((trip) =>
         trip.id.toString() === id ? (
           <div key={trip.id} className="card shadow">
             <div className="row g-0">

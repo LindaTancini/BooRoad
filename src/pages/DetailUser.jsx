@@ -3,11 +3,12 @@ import TripContext from "../context/TripContext";
 import { useParams } from "react-router-dom";
 import FormUser from "../components/FromUser";
 
+
 function DetailUser() {
   const { id } = useParams();
   const { ArrayTrip } = useContext(TripContext);
 
-  const [filterName, setFilterName] = useState("");
+  const [filterName, setFilterName] = useState('');
   const [partecipantsList, setPartecipantsList] = useState([]);
 
   useEffect(() => {
@@ -20,11 +21,8 @@ function DetailUser() {
     e.preventDefault();
 
     if (ArrayTrip && ArrayTrip[id - 1] && ArrayTrip[id - 1].partecipants) {
-      const filteredResults = ArrayTrip[id - 1].partecipants.filter((arr) =>
-        `${arr.name}${arr.surname}`
-          .toLowerCase()
-          .trim()
-          .includes(filterName.toLowerCase().trim())
+      const filteredResults = ArrayTrip[id - 1].partecipants.filter(arr =>
+        `${arr.name}${arr.surname}`.toLowerCase().trim().includes(filterName.toLowerCase().trim())
       );
       setPartecipantsList(filteredResults);
     } else {
