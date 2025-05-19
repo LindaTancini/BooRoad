@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import DefaultLayout from "./layouts/DefaultLayouts";
 import TripContext from "./context/TripContext";
 import ArrayTrip from "./data/ArrayTrip";
+import ArrayOperators from "./data/ArrayOperators";
 import DetailTrip from "./pages/DetailTrip";
 import DetailUser from "./pages/DetailUser";
 

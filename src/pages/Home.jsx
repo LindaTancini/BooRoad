@@ -16,7 +16,7 @@ function HomePage() {
         <h1 className="mb-4">Viaggi in programma:</h1>
         {ArrayTrip && ArrayTrip.length > 0 ? (
           ArrayTrip.map((e) => (
-            <div className="card mb-3">
+            <div key={e.id} className="card mb-3">
               <div className="row g-0">
                 <div className="col-md-4">
                   <img
